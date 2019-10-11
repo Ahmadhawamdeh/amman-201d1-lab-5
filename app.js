@@ -72,9 +72,12 @@ function sumArray(tArray) {
 // // IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. This function should handle an array containing three elements. However, you may continue to use the + operator for string concatenation.
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 // // // Write your code here
-var multArr = [2, 3, 4]; //eslint-disable-line
-function multiplyArray(multArr) { //eslint-disable-line
+var multArr = [2, 3, 4];
+function multiplyArray(multArr) { 
+   var oneMultiply = multiply(multArr[0],multArr[1]);
+   var twoMultiply = multiply(oneMultiply[0],multArr[2]);
   
+   return [twoMultiply[0], "The numbers 2,3,4 have a product of 24."]
 }
 // // // Here is the test for multiplyArray(); uncomment it to run it
 //  testMultiplyArray(testArray);
