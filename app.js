@@ -77,7 +77,7 @@ function multiplyArray(multArr) {
    var oneMultiply = multiply(multArr[0],multArr[1]);
    var twoMultiply = multiply(oneMultiply[0],multArr[2]);
   
-   return [twoMultiply[0], "The numbers 2,3,4 have a product of 24."]
+   return [twosMultiply[0], "The numbers 2,3,4 have a product of 24."]
 }
 // // // Here is the test for multiplyArray(); uncomment it to run it
 //  testMultiplyArray(testArray);
@@ -92,10 +92,15 @@ function multiplyArray(multArr) {
 // // This function should be dynamic, accepting an array of any length.
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 // // // // Write your code here
-var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
-function multiplyAnyArray(testDynamicArray) { //eslint-disable-line
- 
-}
+var testDynamicArray = [1,2,3,4,5];
+function multiplyAnyArray(testDynamicArray) {
+   var testMultiply = multiply(testDynamicArray[0],testDynamicArray[1]);
+   var secondTestMultiply = multiply(testMultiply[0],testDynamicArray[2]);
+   var theredTestMultiply = multiply(secondTestMultiply[0],testDynamicArray[3]);
+   var forthTestMultiply = multiply(theredTestMultiply[0],testDynamicArray[4]);
+  
+   return [forthTestMultiply[0], "The numbers 1,2,3,4,5 have a product of 120."]
+ }
 // // // // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 // // // // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
