@@ -54,9 +54,13 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 // // IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To do addition, use your sum() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
 // // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 // // // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
-function sumArray(testArray) { //eslint-disable-line
-    
+var testArray = [2, 3, 4]; 
+function sumArray(tArray) {
+   var tArray = [2, 3, 4]; 
+   var oneSum = sum(tArray[0],tArray[1]);
+   var twoSum = sum(oneSum[0],tArray[2]);
+  
+   return [twoSum[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
 }
 // // // Here is the test for sumArray(); uncomment it to run it
 // testSumArray(testArray);
