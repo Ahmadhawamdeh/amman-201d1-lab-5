@@ -60,10 +60,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  var h = sum(a, b)[0];
-  var g = sum(h, c)[0];
-  var x = multiply(a, b)[0];
-  var y = multiply(x, c)[0];
+  var h =  sum(a, b)[0];
+  var g =  sum(h, c)[0];
+  var x =  multiply(a, b)[0];
+  var y =  multiply(x, c)[0];
 
 
   return [g, y, +a + " and " + b + " and " + c + " sum to " + g + ".", "The product of " + a + " and " + b + " and " + c + " is " + y + "."];
