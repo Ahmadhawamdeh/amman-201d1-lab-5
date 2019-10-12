@@ -115,8 +115,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 function multiplyArray([a, b, c]) { //eslint-disable-line
-  var r = multiply(a, b)[0];
-  var t = multiply(r, c)[0];
+  var r =  multiply(a, b)[0];
+  var t =  multiply(r, c)[0];
   return [t, "The numbers " + a + "," + b + "," + c + " have a product of " + t + "."];
 }
 multiplyArray([])
