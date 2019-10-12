@@ -150,7 +150,7 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
   var thetotal = 1;
 
   for (var i = 0; i < dynamicArray.length; i++) {
-    thetotal = multiply(thetotal, dynamicArray[i])[0];
+    thetotal =   multiply(thetotal, dynamicArray[i])[0];
   }
   return [thetotal, 'The numbers ' + dynamicArray + ' have a product of ' + thetotal + '.'];
 }
