@@ -90,8 +90,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray([a, b, c]) { //eslint-disable-line
-  var x = sum(a, b)[0];
-  var y = sum(x, c)[0];
+  var x =  sum(a, b)[0];
+  var y =  sum(x, c)[0];
   return [y, a + "," + b + "," + c + " was passed in as an array of numbers, and " + y + " is their sum."]
 }
 sumArray([]);
